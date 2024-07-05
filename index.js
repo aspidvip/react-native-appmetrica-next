@@ -33,9 +33,9 @@ type AppMetricaConfig = {
 type FloorType = "male" | "female";
 
 type UserProfileConfig = {
-  name: string,
+  name?: string,
   floor?: FloorType,
-  age: number,
+  age?: number,
   isNotification?: boolean,
   isUsedHousingSearch?: boolean,
   isAddObjectFavorites?: boolean,
