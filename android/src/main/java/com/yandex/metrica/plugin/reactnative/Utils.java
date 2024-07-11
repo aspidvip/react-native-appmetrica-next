@@ -29,7 +29,7 @@ abstract class Utils {
             userProfile.apply(Attribute.name().withValue(configMap.getString("name")));
         }
         String floor = configMap.getString("floor");
-        Log.w("TAG", floor);
+
         if (configMap.hasKey("floor") &&  "male".equals(configMap.getString("floor"))) {
             userProfile.apply(Attribute.gender().withValue(GenderAttribute.Gender.MALE));
         } else if(configMap.hasKey("floor") && "female".equals(configMap.getString("floor"))) {
